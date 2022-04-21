@@ -2,8 +2,8 @@
 
 - [x] Postion은 0 이상의 값을 갖는다.
   - [x] 0 보다 작은 값을 입력 받으면 Exception을 발생시킨다.
-- [ ] Name은 5자 이하의 값을 갖는다.
-  - [ ] 공백, null, 6자 이상이면 Exception을 발생시킨다.
+- [x] Name은 5자 이하의 값을 갖는다.
+  - [x] 공백, null, 6자 이상이면 Exception을 발생시킨다.
 - [ ] NumberGenerator는 랜덤값을 생성한다.
   - [ ] 0에서 9사이의 값이 아니면 Exception을 발생시킨다.
 - [ ] Car는 Position과 Name을 갖는다.
