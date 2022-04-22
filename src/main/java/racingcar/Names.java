@@ -15,4 +15,8 @@ public class Names {
     public Names(String strNames) {
         this.names = mapToList(strNames);
     }
+
+    public List<Name> getNames() {
+        return names;
+    }
 }

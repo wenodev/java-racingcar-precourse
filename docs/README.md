@@ -12,5 +12,11 @@
   - [x] 4이상이면 움직인다.
 - [x] RandomMovableStrategy는 4보다 크면 true를 반환한다.
 - [x] Cars는 여러개의 Car를 갖는다.
+  - [x] car를 생성합니다.
+- [x] NameInput은 이름을 입력받는다.
+- [x] LapsInput은 횟수를 입력받는다.
+  - [x] 공백 입력시 예외를 발생시킨다.
+  - [x] 문자 입력시 예외를 발생시킨다.
+- [x] CarsGenerator는 입력받은 문자를 Cars로 변환한다.
 - [ ] Game은 자동차 경주를 실행한다.
 - [ ] Referee는 우승자를 판별한다.

@@ -3,12 +3,19 @@ package racingcar;
 import java.util.Objects;
 
 public class Car {
+    private static final int DEFAULT_POSITION_SIZE = 0;
+
     private Position position;
     private Name name;
 
     public Car(Position position, Name name) {
         this.position = position;
         this.name = name;
+    }
+
+    public Car(Name name) {
+        this.name = name;
+        this.position = new Position(DEFAULT_POSITION_SIZE);
     }
 
     public Position getPosition() {
