@@ -1,13 +1,22 @@
 package racingcar.View;
 
+import camp.nextstep.edu.missionutils.Console;
 import racingcar.NameUtils;
 import racingcar.Names;
 
-public class NameInput {
-    private static final String NAME_INPUT_GUIDE_MESSAGE = "이름을 입력하시오. (여러명을 입력할 경우 , 로 구분해주세요)";
+import java.util.NoSuchElementException;
 
-    public static Names input(String name) {
-        View.out(NAME_INPUT_GUIDE_MESSAGE);
-        return new Names(NameUtils.mapToList(name));
+public class NameInput {
+    private static final String NAME_INPUT_GUIDE_MESSAGE = "경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)";
+
+    public static Names input() {
+        View.println(NAME_INPUT_GUIDE_MESSAGE);
+        String name = Console.readLine();
+        try {
+            return new Names(NameUtils.mapToList(name));
+        } catch (NoSuchElementException e){
+            View.println("다시 입력하세요.");
+            return input();
+        }
     }
 }
