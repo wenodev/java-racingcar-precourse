@@ -22,11 +22,15 @@ public class Car {
         return position;
     }
 
+    public Name getName() {
+        return name;
+    }
+
     public void move(MovableStrategy movableStrategy) {
         if (!movableStrategy.isMovable()){
             return;
         }
-        position = position.add();
+        position = position.increase();
     }
 
     @Override
