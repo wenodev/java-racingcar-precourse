@@ -6,6 +6,7 @@
   - [x] 공백, null, 6자 이상이면 Exception을 발생시킨다.
   - [x] 1글자 미만이면 Exception을 발생시킨다.
 - [x] NameInput은 Exception이 발생하면 입력을 다시 받는다.
+- [x] LapsInput은 Exception이 발생하면 입력을 다시 받는다.
 - [x] Names는 여러개의 Name을 갖는다.
 - [x] NameUtils는 string을 List로 변환한다.
 - [x] NumberGenerator는 랜덤값을 생성한다.
