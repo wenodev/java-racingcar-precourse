@@ -3,7 +3,7 @@ package racingcar;
 import java.util.Objects;
 
 public class Position {
-    private static final String INVALID_NUMBER_MESSAGE = "0 이상의 값을 입력하세요.";
+    private static final String INVALID_NUMBER_MESSAGE = "[ERROR] 0 이상의 값을 입력하세요.";
     private static final int MIN_NUMBER = 0;
 
     private final int position;
@@ -15,7 +15,11 @@ public class Position {
         this.position = position;
     }
 
-    public Position add() {
+    public int getPosition() {
+        return position;
+    }
+
+    public Position increase() {
         return new Position(position + 1);
     }
 
